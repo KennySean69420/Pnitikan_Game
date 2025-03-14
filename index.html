@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player vs Bot Card Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Bot Area -->
+    <div class="bot-area">
+      <h2>Bot</h2>
+      <div class="health-bar">
+        <div class="health" id="bot-health"></div>
+      </div>
+      <p>HP: <span id="bot-hp-text">100</span>/100</p>
+    </div>
+
+    <!-- Board Area -->
+    <div class="board">
+      <h3>Board</h3>
+      <div id="played-cards"></div>
+    </div>
+
+    <!-- Player Area -->
+    <div class="player-area">
+      <h2>Player</h2>
+      <div class="health-bar">
+        <div class="health" id="player-health"></div>
+      </div>
+      <p>HP: <span id="player-hp-text">100</span>/100</p>
+      <p>Mana: <span id="player-mana">5</span></p>
+      <div class="player-hand" id="player-hand"></div>
+    </div>
+
+    <!-- Card Details -->
+    <div class="card-details">
+      <h3>Card Details</h3>
+      <p id="card-name"></p>
+      <p id="card-effect"></p>
+      <p id="card-origin"></p>
+    </div>
+
+    <!-- Turn Actions -->
+    <div class="actions">
+      <button id="play-card">Play Card</button>
+      <button id="pass-turn">Pass Turn</button>
+      <button id="restart-game">Restart Game</button>
+    </div>
+
+    <!-- Game Log -->
+    <div class="game-log">
+      <h3>Game Log</h3>
+      <div id="log"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
